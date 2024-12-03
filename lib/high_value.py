@@ -14,3 +14,9 @@ class HighValue:
             self.value_first += increase_by
         elif selection == "second":
             self.value_second += increase_by
+
+high_value = HighValue(5, 2)
+print(high_value.get_highest()) #first value = 5, second value = 2
+
+high_value.add(5, "second") #first value = 5, second value = 7
+print(high_value.get_highest())
